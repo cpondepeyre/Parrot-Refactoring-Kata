@@ -5,20 +5,12 @@ abstract class Parrot(
     internal val voltage: Double,
     internal val isNailed: Boolean
 ) {
+    companion object {
+        const val LOAD_FACTOR: Double = 9.0
+        const val BASE_SPEED: Double = 12.0
+    }
 
-    val speed: Double
-        get() = getParrotSpeed()
+    abstract fun getSpeed(): Double
 
-    internal val loadFactor: Double
-        get() = 9.0
-
-    internal val baseSpeed: Double
-        get() = 12.0
-
-    abstract fun getParrotSpeed(): Double
-
-    abstract fun cry(): String
-
-    val cry: String
-        get() = cry()
+    abstract fun getCry(): String
 }

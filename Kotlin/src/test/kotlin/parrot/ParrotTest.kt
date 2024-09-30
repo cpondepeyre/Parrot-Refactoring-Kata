@@ -49,26 +49,26 @@ class ParrotTest {
     }
 
     @Test
-    fun getCryOfEuropeanParrot() {
+    fun getGetCryOfEuropeanParrot() {
         val parrot = EuropeanParrot(0, 0.0, false)
-        assertEquals("Sqoork!", parrot.cry)
+        assertEquals("Sqoork!", parrot.getCry)
     }
 
     @Test
-    fun getCryOfAfricanParrot() {
+    fun getGetCryOfAfricanParrot() {
         val parrot = AfricanParrot(1, 0.0, false)
-        assertEquals("Sqaark!", parrot.cry)
+        assertEquals("Sqaark!", parrot.getCry)
     }
 
     @Test
-    fun getCryOfNorwegianBlue_high_voltage() {
+    fun getGetCryOfNorwegianBlue_high_voltage() {
         val parrot = NorwegianParrot(0, 4.0, false)
-        assertEquals("Bzzzzzz", parrot.cry)
+        assertEquals("Bzzzzzz", parrot.getCry)
     }
 
     @Test
-    fun getCryOfNorwegianBlue_no_voltage() {
+    fun getGetCryOfNorwegianBlue_no_voltage() {
         val parrot = NorwegianParrot(0, 0.0, false)
-        assertEquals("...", parrot.cry)
+        assertEquals("...", parrot.getCry)
     }
 }

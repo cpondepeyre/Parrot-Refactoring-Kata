@@ -5,11 +5,11 @@ import kotlin.math.max
 class AfricanParrot(numberOfCoconuts: Int, voltage: Double, isNailed: Boolean) : Parrot(
     numberOfCoconuts, voltage, isNailed
 ) {
-    override fun getParrotSpeed(): Double {
-        return max(0.0, baseSpeed - loadFactor * numberOfCoconuts)
+    override fun getSpeed(): Double {
+        return max(0.0, BASE_SPEED - LOAD_FACTOR * numberOfCoconuts)
     }
 
-    override fun cry(): String {
+    override fun getCry(): String {
         return "Sqaark!";
     }
 }
