@@ -8,4 +8,8 @@ class AfricanParrot(numberOfCoconuts: Int, voltage: Double, isNailed: Boolean) :
     override fun getSpeed(): Double {
         return max(0.0, baseSpeed - loadFactor * numberOfCoconuts)
     }
+
+    override fun cry(): String {
+        return "Sqaark!";
+    }
 }

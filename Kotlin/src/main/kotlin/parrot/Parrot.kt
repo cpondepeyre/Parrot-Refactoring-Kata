@@ -1,8 +1,5 @@
 package parrot
 
-import kotlin.math.max
-import kotlin.math.min
-
 abstract class Parrot(
     private val type: ParrotTypeEnum,
     internal val numberOfCoconuts: Int,
@@ -21,12 +18,8 @@ abstract class Parrot(
 
     abstract fun getSpeed(): Double
 
+    abstract fun cry(): String
+
     val cry: String
-        get() = when (type) {
-            ParrotTypeEnum.EUROPEAN -> "Sqoork!"
-            ParrotTypeEnum.AFRICAN -> "Sqaark!"
-            ParrotTypeEnum.NORWEGIAN_BLUE ->
-                if (voltage > 0) "Bzzzzzz"
-                else "..."
-        }
+        get() = cry()
 }

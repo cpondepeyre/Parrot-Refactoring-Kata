@@ -8,4 +8,8 @@ class EuropeanParrot(numberOfCoconuts: Int, voltage: Double, isNailed: Boolean) 
     override fun getSpeed(): Double {
         return baseSpeed;
     }
+
+    override fun cry(): String {
+        return "Sqoork!";
+    }
 }
