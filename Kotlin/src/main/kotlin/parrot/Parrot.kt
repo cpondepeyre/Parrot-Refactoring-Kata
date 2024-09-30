@@ -1,7 +1,6 @@
 package parrot
 
 abstract class Parrot(
-    private val type: ParrotTypeEnum,
     internal val numberOfCoconuts: Int,
     internal val voltage: Double,
     internal val isNailed: Boolean
