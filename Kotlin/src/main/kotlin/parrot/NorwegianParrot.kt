@@ -7,7 +7,7 @@ class NorwegianParrot(numberOfCoconuts: Int, voltage: Double, isNailed: Boolean)
     voltage,
     isNailed
 ) {
-    override fun getSpeed(): Double {
+    override fun getParrotSpeed(): Double {
         return if (isNailed) 0.0 else min(24.0, voltage * baseSpeed)
     }
 

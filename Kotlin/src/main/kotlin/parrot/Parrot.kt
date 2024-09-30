@@ -7,7 +7,7 @@ abstract class Parrot(
 ) {
 
     val speed: Double
-        get() = getSpeed()
+        get() = getParrotSpeed()
 
     internal val loadFactor: Double
         get() = 9.0
@@ -15,7 +15,7 @@ abstract class Parrot(
     internal val baseSpeed: Double
         get() = 12.0
 
-    abstract fun getSpeed(): Double
+    abstract fun getParrotSpeed(): Double
 
     abstract fun cry(): String
 
