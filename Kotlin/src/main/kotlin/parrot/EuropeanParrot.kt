@@ -5,4 +5,7 @@ class EuropeanParrot(numberOfCoconuts: Int, voltage: Double, isNailed: Boolean) 
     voltage,
     isNailed
 ) {
+    override fun getSpeed(): Double {
+        return baseSpeed;
+    }
 }
