@@ -1,9 +1,9 @@
 package parrot
 
 abstract class Parrot(
-    internal val numberOfCoconuts: Int,
-    internal val voltage: Double,
-    internal val isNailed: Boolean
+    internal val numberOfCoconuts: Int = 0,
+    internal val voltage: Double = 0.0,
+    internal val isNailed: Boolean = false
 ) {
     companion object {
         const val LOAD_FACTOR: Double = 9.0
